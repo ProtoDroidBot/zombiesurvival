@@ -59,7 +59,7 @@ include("sh_sigils.lua")
 include("sh_channel.lua")
 include("sh_weaponquality.lua")
 
-include("noxapi/noxapi.lua")
+--include("noxapi/noxapi.lua")
 
 include("vault/shared.lua")
 
@@ -814,7 +814,7 @@ function GM:PlayerNoClip(pl, on)
 	return false
 end
 
-function GM:IsSpecialPerson(pl, image)
+--[[function GM:IsSpecialPerson(pl, image)
 	local img, tooltip
 
 	if pl:SteamID() == "STEAM_0:1:3307510" then
@@ -838,7 +838,7 @@ function GM:IsSpecialPerson(pl, image)
 	end
 
 	return false
-end
+end]]
 
 function GM:GetWaveEnd()
 	return GetGlobalFloat("waveend", 0)

@@ -460,14 +460,14 @@ function PANEL:SetPlayer(pl)
 		self.m_Avatar:SetPlayer(pl)
 		self.m_Avatar:SetVisible(true)
 
-		if gamemode.Call("IsSpecialPerson", pl, self.m_SpecialImage) then
+		--[[if gamemode.Call("IsSpecialPerson", pl, self.m_SpecialImage) then
 			self.m_SpecialImage:SetVisible(true)
 		else
 			self.m_SpecialImage:SetTooltip()
 			self.m_SpecialImage:SetVisible(false)
 		end
 
-		self.m_Flash = pl:SteamID() == "STEAM_0:1:3307510"
+		self.m_Flash = pl:SteamID() == "STEAM_0:1:3307510"]]
 	else
 		self.m_Avatar:SetVisible(false)
 		self.m_SpecialImage:SetVisible(false)
